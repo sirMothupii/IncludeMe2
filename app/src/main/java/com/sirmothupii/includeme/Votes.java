@@ -83,7 +83,7 @@ public class Votes extends AppCompatActivity
         animalsNameList.add("Economic Class:    ");
         animalsNameList.add("Government:     ");
         animalsNameList.add("Value:     ");
-   
+
     }
 
 
