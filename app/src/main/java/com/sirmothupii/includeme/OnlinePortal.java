@@ -52,7 +52,8 @@ public class OnlinePortal extends AppCompatActivity
             }
         });
         webview.setWebViewClient(new WebViewClient() {
-            public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
+            public void onReceivedError(WebView view, int errorCode, String description, String failingUrl)
+            {
                 Toast.makeText(activity, "web could not be displayed! " + description, Toast.LENGTH_SHORT).show();
             }
         });
