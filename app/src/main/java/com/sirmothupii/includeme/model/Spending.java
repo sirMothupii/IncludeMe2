@@ -9,8 +9,8 @@ package com.sirmothupii.includeme.model;
  *
  * @author sponch
  */
-public class Spending {
-    
+public class Spending
+{
     private String department;
     private int programNumber;
     private String program;
@@ -31,71 +31,84 @@ public class Spending {
         this.value = value;
     }
 
-    public String getDepartment() {
+    public String getDepartment()
+    {
         return department;
     }
 
-    public void setDepartment(String department) {
+    public void setDepartment(String department)
+    {
         this.department = department;
     }
 
-    public int getProgramNumber() {
+    public int getProgramNumber()
+    {
         return programNumber;
     }
 
-    public void setProgramNumber(int programNumber) {
+    public void setProgramNumber(int programNumber)
+    {
         this.programNumber = programNumber;
     }
 
-    public String getProgram() {
+    public String getProgram()
+    {
         return program;
     }
 
-    public void setProgram(String program) {
+    public void setProgram(String program)
+    {
         this.program = program;
     }
 
-    public int getFinYear() {
+    public int getFinYear()
+    {
         return finYear;
     }
 
-    public void setFinYear(int finYear) {
+    public void setFinYear(int finYear)
+    {
         this.finYear = finYear;
     }
 
-    public String getBudgetPhase() {
+    public String getBudgetPhase()
+    {
         return budgetPhase;
     }
 
-    public void setBudgetPhase(String budgetPhase) {
+    public void setBudgetPhase(String budgetPhase)
+    {
         this.budgetPhase = budgetPhase;
     }
 
-    public String getEconomicClass() {
+    public String getEconomicClass()
+    {
         return economicClass;
     }
 
-    public void setEconomicClass(String economicClass) {
+    public void setEconomicClass(String economicClass)
+    {
         this.economicClass = economicClass;
     }
 
-    public String getGovernement() {
+    public String getGovernement()
+    {
         return governement;
     }
 
-    public void setGovernement(String governement) {
+    public void setGovernement(String governement)
+    {
         this.governement = governement;
     }
 
-    public float getValue() {
+    public float getValue()
+    {
         return value;
     }
 
-    public void setValue(float value) {
+    public void setValue(float value)
+    {
         this.value = value;
     }
 
-    
-    
-    
 }
