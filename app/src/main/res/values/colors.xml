@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#F9B925</color>
-    <color name="colorPrimaryDark">#689f38</color>
+    <color name="colorPrimaryDark">#F9B925</color>
     <color name="colorAccent">#666666</color>
     <color name="colorGray">#eeeeee</color>
 
@@ -60,7 +60,7 @@
     <!-- Google Logo Color -->
     <color name="google_blue">#4285f4</color>
     <color name="google_green">#34A853</color>
-    <color name="google_yellow">#FBBC05</color>
+    <color name="google_yellow">#fbbc05</color>
     <color name="google_red">#EA4335</color>
 
     <!-- Google Apps Color -->
