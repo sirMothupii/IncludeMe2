@@ -110,6 +110,7 @@ public class Votes extends AppCompatActivity
         animalsNameList.add("Economic Class:    " + mockEconomicClass[countZonke]);
         animalsNameList.add("Government:     " + mockGovernment);
         animalsNameList.add("Value:     " + mockValue[countZonke]);
+        animalsNameList.add("Count Zonke:     " + countZonke);
 
     }
 
