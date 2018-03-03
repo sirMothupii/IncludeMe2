@@ -17,8 +17,20 @@ public class Votes extends AppCompatActivity
 {
     private SpendingHelper spendHelper;
     private Spending spending[];
-    private static int Count;
+    private static int countZonke;
 
+
+    //Arrays for mocks
+    private String mockDept[] = {"Education", "Health",  "Social Development", "Office of the Premier", "Provincial Legislature"};
+    private String mockProgNum[] = {"1", "1", "1", "1", "1"};
+    private String mockProgram[] = {"Administration", "Administration", "Administration", "Administration", "Administration"};
+    private String mockBudgetPhase  = "Outcome Current Payments";
+    private String mockEconomicClass[] = {"Goods and services", "Compensation of employees", "Compensation of employees", "Compensation of employees", "Compensation of employees" };
+    private String mockGovernment = "Eastern Cape";
+    private String mockValue[] = {"R895 0244 000", "R145 233 000", "R51 271 000", "R33 319 000", "R26 500 000" };
+
+
+    private boolean voteStat[] = new boolean[10];
 
     ArrayList<String> animalsNameList;
 
@@ -26,7 +38,7 @@ public class Votes extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
-        Count = 0;
+        countZonke = 0;
 
 
         super.onCreate(savedInstanceState);
@@ -73,19 +85,28 @@ public class Votes extends AppCompatActivity
     void getAnimalNames()
     {
 
-
-
-
-        animalsNameList.add("Department : ");
-        animalsNameList.add("Program Number: ");
-        animalsNameList.add("Program:   ");
-        animalsNameList.add("Budget Phase :    ");
-        animalsNameList.add("Economic Class:    ");
-        animalsNameList.add("Government:     ");
-        animalsNameList.add("Value:     ");
+        animalsNameList.add("Department : " + mockDept[countZonke] );
+        animalsNameList.add("Program Number: " + mockProgNum[countZonke]);
+        animalsNameList.add("Program:   " + mockProgram[countZonke]);
+        animalsNameList.add("Budget Phase :    " + mockBudgetPhase);
+        animalsNameList.add("Economic Class:    " + mockEconomicClass[countZonke]);
+        animalsNameList.add("Government:     " + mockGovernment);
+        animalsNameList.add("Value:     " + mockValue[countZonke]);
 
     }
 
 
 
+    public void onClickNextButton(View view){
+        if (countZonke >= 1){
+            countZonke += 1;
+        }
+
+    }
+
+    public void onClickPrevButton(View view){
+        if (countZonke >= 1){
+            countZonke -= 1;
+        }
+    }
 }
