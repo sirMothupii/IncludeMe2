@@ -11,6 +11,8 @@ package com.sirmothupii.includeme.model;
  */
 public class Spending
 {
+
+    //declarin all the variables
     private String department;
     private int programNumber;
     private String program;
