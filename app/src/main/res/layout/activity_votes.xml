@@ -78,7 +78,8 @@
             android:layout_weight="1"
             android:background="@color/activity_background"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/back_icon" />
+            app:srcCompat="@drawable/back_icon"
+            android:onClick="onClickPrevButton" />
 
         <ImageView
             android:id="@+id/imageView6"
@@ -86,7 +87,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/next_icon" />
+            app:srcCompat="@drawable/next_icon"
+            android:onClick="onClickNextButton"/>
     </LinearLayout>
 
 </LinearLayout>
