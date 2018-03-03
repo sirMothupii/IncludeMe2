@@ -26,9 +26,11 @@
         <activity android:name=".Votes" />
         <activity android:name=".SuggestSpending" />
         <activity android:name=".OnlinePortal">
-            <meta-data android:name="android.webkit.WebView.MetricsOptOut"
+            <meta-data
+                android:name="android.webkit.WebView.MetricsOptOut"
                 android:value="true" />
         </activity>
+        <activity android:name=".Report"></activity>
     </application>
 
 </manifest>

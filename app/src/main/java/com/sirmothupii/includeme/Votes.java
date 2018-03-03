@@ -99,10 +99,8 @@ public class Votes extends AppCompatActivity
         Toast.makeText(getApplicationContext(), " You have down voted!: ",   Toast.LENGTH_LONG).show();
     }
 
-
     void getAnimalNames()
     {
-
         animalsNameList.add("Department : " + mockDept[countZonke] );
         animalsNameList.add("Program Number: " + mockProgNum[countZonke]);
         animalsNameList.add("Program:   " + mockProgram[countZonke]);
@@ -110,7 +108,6 @@ public class Votes extends AppCompatActivity
         animalsNameList.add("Economic Class:    " + mockEconomicClass[countZonke]);
         animalsNameList.add("Government:     " + mockGovernment);
         animalsNameList.add("Value:     " + mockValue[countZonke]);
-
     }
 
 
