@@ -37,17 +37,25 @@
         android:layout_weight="1"
         android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/btn_upvote"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Upvote"/>
+        <ImageButton
+            android:id="@+id/imgBtnDownVote"
+            android:layout_width="63dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:background="@color/activity_background"
+            android:onClick="onItemClickBtnUpVote"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/thumbs_up" />
 
-        <Button
-            android:id="@+id/btn_downvote"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Downvote"/>
+        <ImageButton
+            android:id="@+id/imgBtnUpVoat"
+            android:layout_width="63dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:background="@color/activity_background"
+            android:onClick="onItemClickBtnDownVote"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/down" />
 
         <TextView
             android:id="@+id/text_view"
@@ -63,19 +71,22 @@
         android:layout_height="0dp"
         android:layout_weight="1">
 
-        <Button
-            android:id="@+id/btn_prev"
-            android:layout_width="0dp"
+        <ImageButton
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Previous"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:background="@color/activity_background"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/back_icon" />
 
-        <Button
-            android:id="@+id/btn_next"
-            android:layout_width="0dp"
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Next Spending"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/next_icon" />
     </LinearLayout>
 
 </LinearLayout>

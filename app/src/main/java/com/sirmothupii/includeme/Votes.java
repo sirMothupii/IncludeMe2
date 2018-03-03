@@ -67,8 +67,26 @@ public class Votes extends AppCompatActivity
                 String selectedAnimal=animalsNameList.get(position);
                 Toast.makeText(getApplicationContext(), "Animal Selected : "+selectedAnimal,   Toast.LENGTH_LONG).show();
             }
+
         });
+
+
     }
+
+    //onClick toast for up vote image button
+    public void onItemClickBtnUpVote(View v)
+    {
+        String selectedAnimal=animalsNameList.get(position);
+        Toast.makeText(getApplicationContext(), " Up vote is successful: "+selectedAnimal,   Toast.LENGTH_LONG).show();
+    }
+
+    //onClick toast for up vote image button
+    public void onItemClickBtnDownVote(View view)
+    {
+        String selectedAnimal=animalsNameList.get(position);
+        Toast.makeText(getApplicationContext(), " User has down voted successfully: "+selectedAnimal,   Toast.LENGTH_LONG).show();
+    }
+
 
     void getAnimalNames()
     {
