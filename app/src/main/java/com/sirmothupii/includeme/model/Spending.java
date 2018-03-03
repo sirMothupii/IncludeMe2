@@ -11,73 +11,90 @@ package com.sirmothupii.includeme.model;
  */
 public class Spending {
     
-    private int category;
-    private String muncipality;
-    private double amount;
-    private String description;
-    private String itemName;
+    private String department;
+    private int programNumber;
+    private String program;
+    private int finYear;
+    private String budgetPhase;
+    private String economicClass;
+    private String governement;
+    private float value;
 
-    public Spending(){
-        
-        category = 0;
-        muncipality = "none";
-        amount = 0.00;
-        description = "empty";
-        itemName = "";
-        
-        
-    }
-    public Spending(int category, String muncipality, float amount, String description, String itemName) {
-        this.category = category;
-        this.muncipality = muncipality;
-        this.amount = amount;
-        this.description = description;
-        this.itemName = itemName;
+    public Spending(String department, int programNumber, String program, int finYear, String budgetPhase, String economicClass, String governement, float value) {
+        this.department = department;
+        this.programNumber = programNumber;
+        this.program = program;
+        this.finYear = finYear;
+        this.budgetPhase = budgetPhase;
+        this.economicClass = economicClass;
+        this.governement = governement;
+        this.value = value;
     }
 
-    public int getCategory() {
-        return category;
+    public String getDepartment() {
+        return department;
     }
 
-    public String getMuncipality() {
-        return muncipality;
+    public void setDepartment(String department) {
+        this.department = department;
     }
 
-    public double getAmount() {
-        return amount;
+    public int getProgramNumber() {
+        return programNumber;
     }
 
-    public String getDescription() {
-        return description;
+    public void setProgramNumber(int programNumber) {
+        this.programNumber = programNumber;
     }
 
-    public String getItemName() {
-        return itemName;
+    public String getProgram() {
+        return program;
     }
 
-    public void setCategory(int category) {
-        this.category = category;
+    public void setProgram(String program) {
+        this.program = program;
     }
 
-    public void setMuncipality(String muncipality) {
-        this.muncipality = muncipality;
+    public int getFinYear() {
+        return finYear;
     }
 
-    public void setAmount(double amount) {
-        this.amount = amount;
+    public void setFinYear(int finYear) {
+        this.finYear = finYear;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public String getBudgetPhase() {
+        return budgetPhase;
     }
 
-    public void setItemName(String itemName) {
-        this.itemName = itemName;
+    public void setBudgetPhase(String budgetPhase) {
+        this.budgetPhase = budgetPhase;
     }
-    
-    
-    
-    
+
+    public String getEconomicClass() {
+        return economicClass;
+    }
+
+    public void setEconomicClass(String economicClass) {
+        this.economicClass = economicClass;
+    }
+
+    public String getGovernement() {
+        return governement;
+    }
+
+    public void setGovernement(String governement) {
+        this.governement = governement;
+    }
+
+    public float getValue() {
+        return value;
+    }
+
+    public void setValue(float value) {
+        this.value = value;
+    }
+
     
     
     

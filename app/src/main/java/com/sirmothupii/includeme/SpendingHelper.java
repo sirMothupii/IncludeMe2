@@ -5,6 +5,8 @@
  */
 package com.sirmothupii.includeme;
 
+import com.sirmothupii.includeme.model.Spending;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -47,7 +49,7 @@ public class SpendingHelper {
     
         
     //TODO: implement read to file
-    BufferedReader br = new BufferedReader(new FileReader("file.txt"));
+    BufferedReader br = new BufferedReader(new FileReader("data.csv"));
     try {
         StringBuilder sb = new StringBuilder();
         String line = br.readLine();
@@ -138,7 +140,7 @@ public class SpendingHelper {
  
 
 
-};
+}
     
     
     
