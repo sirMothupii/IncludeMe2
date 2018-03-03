@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 import com.sirmothupii.includeme.model.Spending;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class Votes extends AppCompatActivity
@@ -17,14 +18,7 @@ public class Votes extends AppCompatActivity
     private SpendingHelper spendHelper;
     private Spending spending[];
     private static int Count;
-    private String data[] = {"Department : ",
-            "Program Number: ",
-            "Program:   ",
-            "Financial Year:   ",
-            "Budget Phase :    ",
-            "Economic Class:    ",
-            "Government:     ",
-            "Value"};
+
 
     ArrayList<String> animalsNameList;
 
@@ -38,8 +32,18 @@ public class Votes extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_votes);
 
-        spendHelper = new SpendingHelper(spending);
+        spendHelper = new SpendingHelper();
 
+        try
+        {
+            spendHelper.loadSpendingFromFile();
+        }
+        catch (IOException e)
+        {
+
+        }
+
+        spending = spendHelper.getSpending();
 
         // Get the reference of ListViewAnimals
         ListView animalList=(ListView)findViewById(R.id.lstSpending);
@@ -68,21 +72,18 @@ public class Votes extends AppCompatActivity
 
     void getAnimalNames()
     {
-        animalsNameList.add("DOG");
-        animalsNameList.add("CAT");
-        animalsNameList.add("HORSE");
-        animalsNameList.add("ELEPHANT");
-        animalsNameList.add("LION");
-        animalsNameList.add("COW");
-        animalsNameList.add("MONKEY");
-        animalsNameList.add("DEER");
-        animalsNameList.add("RABBIT");
-        animalsNameList.add("BEER");
-        animalsNameList.add("DONKEY");
-        animalsNameList.add("LAMB");
-        animalsNameList.add("GOAT");
 
 
+
+
+        animalsNameList.add("Department : ");
+        animalsNameList.add("Program Number: ");
+        animalsNameList.add("Program:   ");
+        animalsNameList.add("Budget Phase :    ");
+        animalsNameList.add("Economic Class:    ");
+        animalsNameList.add("Government:     ");
+        animalsNameList.add("Value:     ");
+   
     }
 
 

@@ -96,6 +96,7 @@ public class IncludeMe extends AppCompatActivity
         }
         else if (id == R.id.nav_actual_spending)
         {
+            startActivity(new Intent(this, Votes.class));
 
         }
         else if (id == R.id.nav_suggested_spending)
