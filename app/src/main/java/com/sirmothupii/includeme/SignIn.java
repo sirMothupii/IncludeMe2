@@ -14,6 +14,7 @@ public class SignIn extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
     }
+
     //Link to take user to dashboard screen
     public void onClickSignIn(View view)
     {
@@ -25,6 +26,13 @@ public class SignIn extends AppCompatActivity
     public void onClickRegister(View view)
     {
         Intent intent1 = new Intent(this, SignIn.class);
+        startActivity(intent1);
+    }
+
+    //Link to take user to navigation screen
+    public void onClickIncludMe(View view)
+    {
+        Intent intent1 = new Intent(this, IncludeMe.class);
         startActivity(intent1);
     }
 }
