@@ -27,4 +27,11 @@ public class SignIn extends AppCompatActivity
         Intent intent1 = new Intent(this, SignIn.class);
         startActivity(intent1);
     }
+
+    //Link to take user to navigation screen
+    public void onClickIncludMe(View view)
+    {
+        Intent intent1 = new Intent(this, IncludeMe.class);
+        startActivity(intent1);
+    }
 }

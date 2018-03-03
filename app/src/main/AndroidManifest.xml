@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sirmothupii.includeme">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -22,7 +24,11 @@
             android:label="@string/title_activity_include_me"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Votes" />
-        <activity android:name=".SuggestSpending"></activity>
+        <activity android:name=".SuggestSpending" />
+        <activity android:name=".OnlinePortal">
+            <meta-data android:name="android.webkit.WebView.MetricsOptOut"
+                android:value="true" />
+        </activity>
     </application>
 
 </manifest>

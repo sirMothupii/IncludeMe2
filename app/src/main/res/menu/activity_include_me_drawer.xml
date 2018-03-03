@@ -5,33 +5,30 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:id="@+id/nav_report_issues"
+            android:icon="@drawable/taxi_schedule_icon"
+            android:title="Report Issues" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:id="@+id/nav_survey"
+            android:icon="@drawable/surveyy"
+            android:title="Budget Survey" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/time_icon"
+            android:title="Online Dashboard" />
+
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="Votes">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:id="@+id/nav_actual_spending"
+                android:icon="@drawable/actual_spending"
+                android:title="Actual Spending" />
             <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:id="@+id/nav_suggested_spending"
+                android:icon="@drawable/sugested_spending"
+                android:title="Suggested Spending" />
         </menu>
     </item>
 
