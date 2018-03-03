@@ -89,14 +89,14 @@ public class Votes extends AppCompatActivity
     public void onItemClickBtnUpVote(View v)
     {
         //String selectedAnimal=animalsNameList.get(position);
-        Toast.makeText(getApplicationContext(), " Up vote is successful: " ,Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), " You Have Up voted!: " ,Toast.LENGTH_LONG).show();
     }
 
     //onClick toast for up vote image button
     public void onItemClickBtnDownVote(View view)
     {
         //String selectedAnimal=animalsNameList.get(position);
-        Toast.makeText(getApplicationContext(), " User has down voted successfully: ",   Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), " You have down voted!: ",   Toast.LENGTH_LONG).show();
     }
 
 

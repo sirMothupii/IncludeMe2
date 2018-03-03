@@ -45,7 +45,7 @@
     <color name="yellow_primary">#FFEB3B</color>
     <color name="yellow_primary_dark">#FBC02D</color>
     <color name="amber_primary">#424242</color>
-    <color name="amber_primary_dark">#FFA000</color>
+    <color name="amber_primary_dark">#faffa000</color>
     <color name="orange_primary">#f9b925</color>
     <color name="orange_primary_dark">#F57C00</color>
     <color name="deep_orange_primary">#f9b925</color>
